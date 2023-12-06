@@ -1,13 +1,47 @@
+/* Day Mode */
 *{
    box-sizing:border-box; 
 }
 
-body{
+.dayBG{
     font-family: 'Montserrat';
+    background-image: url(../assets/pexels-lukas-296234.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
 }
+
+.displayBG
 
 input[text]{
     font-weight: bold;
     font-size: 20px;
-    border-radius: 20px;
+}
+
+.title{
+    margin-top: 82px;
+    margin-left: 70px;
+}
+
+.bg{
+    background-color: #1D2837;
+    padding: 0;
+}
+
+.one{
+    display:block;
+    background-color: #1D2837;
+    padding: 0;
+    height: 850px;
+}
+/* End of Day Mode */
+
+/* Night Mode */
+
+.nightBG{
+    font-family: 'Montserrat';
+    background-image: url(../assets/casey-horner-fsJB3KT2rj8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
