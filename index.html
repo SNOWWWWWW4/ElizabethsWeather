@@ -24,29 +24,29 @@
         <div class="displayBG">
             <div class="table">
                 <div class="row">
-                <div class="cell">Current</div>
-                <div class="cell">Weather Icon</div>
-                <div class="cell">H: L: </div>
+                <div class="cell" id="today">Current</div>
+                <div class="cell"id="Icon1">Weather Icon</div>
+                <div class="cell" id="HL1">H: L: </div>
                 </div>
                 <div class="row">
-                <div class="cell">Tomorrow</div>
-                <div class="cell">Weather Icon</div>
-                <div class="cell">H: L: </div>
+                <div class="cell" id="Tmr">Tomorrow</div>
+                <div class="cell" id="Icon2">Weather Icon</div>
+                <div class="cell" id="HL2">H: L: </div>
                 </div>
                 <div class="row">
-                <div class="cell">Wednesday</div>
-                <div class="cell">Weather Icon</div>
-                <div class="cell">Cat</div>
+                <div class="cell"id="day3">Wednesday</div>
+                <div class="cell"id="Icon2">Weather Icon</div>
+                <div class="cell"id="HL3">Cat</div>
                 </div>
                 <div class="row">
-                <div class="cell">Thursday</div>
-                <div class="cell">Weather Icon</div>
-                <div class="cell">H: L: </div>
+                <div class="cell"id="day4">Thursday</div>
+                <div class="cell"><img id="Icon4" src="" alt="weather Icon"></div>
+                <div class="cell"id="HL4">H: L: </div>
                 </div>
                 <div class="row">
-                <div class="cell">Friday</div>
-                <div class="cell">Weather Icon</div>
-                <div class="cell">H: L: </div>
+                <div class="cell"id="day5">Friday</div>
+                <div class="cell"id="Icon5">Weather Icon</div>
+                <div class="cell"id="HL5">H: L: </div>
                 </div>
             </div>
         </div>
@@ -55,12 +55,12 @@
 
         <div class="row">
             <div class="col">
-                <h1 id="temp" style="font-size: 90px;">51</p>
+                <h1 id="temp" style="font-size: 90px;">0</p>
             </div>
             
             <div class="col">
-                <h1 id="cityName">Stockton, CA</h1>
-            <h1 id="desc">partially cloudy</h1>
+                <h1 id="cityName">CityName</h1>
+            <h1 id="desc">Description</h1>
             </div>
             
             <img src=""/>
@@ -69,8 +69,8 @@
     </div>
 
     <!-- searching -->
-    <div class="col-4 bg" style="float: right;">
-        <span class="one">
+    <div class="col-4 bg  d-flex justify-content-end"  style="float: right;">
+        <span >
             <div >
                 <input type="text" placeholder="Enter City" id="userInput">
                 <button id="searchBtn" type="button"><img src="./assets/magnifying-glass-bold.png" alt="magnifying-glass-bold-icon" width="18px"/></button>
@@ -78,7 +78,7 @@
             </div>
 
             <hr>
-            <h5>Current City</h5>
+            <h5 id="current">Current Name</h5>
             <h5></h5>
             <hr>
 

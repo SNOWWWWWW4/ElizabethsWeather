@@ -6,48 +6,41 @@
     <title>Weather Night Mode</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
   </head>
 
   <body class="nightBG">
     
-    <div>
-        <h1>Hello, world!</h1>
+    <div class="row" style="height: 100%;">
+      <div class="col-8">
+        <div class="title">
+          <h1 style="font-size: 42x; font-family: 'Montserrat', sans-serif; font-weight: 800;">Weather Report</h1>
+          <h3 style="font-size: 18px;  font-family: 'Montserrat', sans-serif; font-weight: 500; margin-top: 20px;">November 27, 2023 | 2:20 PM PST</h2>
+        </div>
 
-        <h1> hey</h1>
+        <div class="display">
+
+        </div>
+
+        <div class="current">
+
+        </div>
+      </div>
+      
+      <div class="col wrapper parent " style="margin-left: 42px;">
+        <input class="child child-1" type="text" placeholder="  Enter City" id="userInput">
+
+        <button  id="searchBtn" type="button"><img  class=" child child-2"  src="../assets/magnifying-glass-bold.png" alt="magnifying-glass-bold-icon" width="35px"/></button>
+       
+
+
+      </div>
+      
     </div>
-    <!-- <img src="../assets/casey-horner-fsJB3KT2rj8-unsplash.jpg" width="500px"/> -->
-    <div class="table">
-      <div class="row">
-        <div class="cell">Current</div>
-        <div class="cell">Weather Icon</div>
-        <div class="cell"><p>H: L: </p></div>
-      </div>
-      <div class="row">
-        <div class="cell">Tomorrow</div>
-        <div class="cell">Weather Icon</div>
-        <div class="cell"><p>H: L: </p></div>
-      </div>
-      <div class="row">
-        <div class="cell">Wednesday</div>
-        <div class="cell">Weather Icon</div>
-        <div class="cell">Cat</div>
-      </div>
-      <div class="row">
-        <div class="cell">Thursday</div>
-        <div class="cell">Weather Icon</div>
-        <div class="cell"><p>H: L: </p></div>
-      </div>
-      <div class="row">
-        <div class="cell">Friday</div>
-        <div class="cell">Weather Icon</div>
-        <div class="cell"><p>H: L: </p></div>
-      </div>
-</div>
    
-
-
-
     <script src="./scripts/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
