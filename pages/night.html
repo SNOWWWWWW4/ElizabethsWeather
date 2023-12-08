@@ -14,59 +14,112 @@
 
   <body class="nightBG">
     
-    <div class="row" style="height: 100%;">
-      <div class="col-8">
-        <div class="title">
-          <h1 style="font-size: 42x; font-family: 'Montserrat', sans-serif; font-weight: 800;">Weather Report</h1>
-          <h3 style="font-size: 18px;  font-family: 'Montserrat', sans-serif; font-weight: 500; margin-top: 20px;">November 27, 2023 | 2:20 PM PST</h2>
-        </div>
-
-        
-        <div class="display">
-          <h1 class="forcastHeader">5 Day Forcast</h1>
-
-          <div class="one" id="today">Today</div>
-          <img class="img1" id="Icon1" src="" alt="" width=""/>
-          <div class="forcast1" id="HL1">H: ° L: °</div>
-
-          <div class="two"id="Tmr">Tomorrow</div>
-          <img class="img2" id="Icon2" src="" alt="" width=""/>
-          <div class="forcast2" id="HL2">H: ° L: °</div>
-
-          <div class="three" id="day3">Day 3</div>
-          <img class="img3" id="Icon3" src="" alt="" width=""/>
-          <div class="forcast3" id="HL3">H: ° L: °</div>
-
-          <div class="four" id="day3">Day 4</div>
-          <img class="img4" id="Icon4" src="" alt="" width=""/>
-          <div class="forcast4" id="HL4">H: ° L: °</div>
-
-          <div class="five" id="day3">Day 5</div>
-          <img class="img5" id="Icon5" src="" alt="" width=""/>
-          <div class="forcast5" id="HL5">H: ° L: °</div>
-        </div>
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-9" style="width: 70%">
+              <!-- main -->
+              <div class="row" style="float: inline-start; padding: 0;">
+                  <div class="title">
+                      <h1 style="font-size: 42x; font-family: 'Montserrat', sans-serif; font-weight: 800;">Weather Report</h1>
+                      <h3 style="font-size: 18px;  font-family: 'Montserrat', sans-serif; font-weight: 500; margin-top: 20px;">November 27, 2023 | 2:20 PM PST</h3>
+                  </div>
       
-        
-        <div class="current">
-          <h1 class="mainTemp" id="temp" style="font-size: 90px;">0°</h1>
-          <h1 class="mainName" id="cityName">CityName</h1>
-          <h1 class="mainDesc" id="desc">Description</h1>
-          <img/>
-        </div>
-        
-        
+                  <div class="display center">
+                      <div class="row">
+                          <h1 style="margin-top:30px; font-weight: 500;">5 Day Forecast</h1>
+                      </div>
+                      <div class="row space" style="display: flex; justify-content: space-around; ">
+                          <div class=" col">
+                          <h1 id="today" style="font-size: 20px;">Today</h1>
+                          <img id="Icon1" src="" alt="weather Icon 1" width="100px" style="margin-top: 20px;"/>
+                          <h1 id="HL1" style="font-size: 16px; margin-top: 20px;">H: ° L: °</h1>
+                          </div>
+                          <div class=" col">
+                          <h1 id="Tmr"style="font-size: 20px;">Tomorrow</h1>
+                          <img id="Icon2" src="" alt="weather Icon 2" width="100px"style="margin-top: 20px;"/>
+                          <h1 id="HL2"style="font-size: 16px; margin-top: 20px;">H: ° L: °</h1>
+                          </div>
+                          <div class=" col">
+                          <h1 id="Day3"style="font-size: 20px;">Wednesday</h1>
+                          <img id="Icon3" src="" alt="weather Icon 3" width="100px"style="margin-top: 20px;"/>
+                          <h1 id="HL3"style="font-size: 16px; margin-top: 20px;">H: ° L: °</h1>
+                          </div>
+                          <div class=" col">
+                          <h1 id="Day4"style="font-size: 20px;">Thursday</h1>
+                          <img id="Icon4" src="" alt="weather Icon 4" width="100px"style="margin-top: 20px;"/>
+                          <h1 id="HL4"style="font-size: 16px; margin-top: 20px;">H: ° L: °</h1>
+                          </div>
+                          <div class=" col">
+                          <h1 id="Day5"style="font-size: 20px;">Friday</h1>
+                          <img id="Icon5" src="" alt="weather Icon 5" width="100px" style="margin-top: 20px;"/>
+                          <h1 id="HL5"style="font-size: 16px; margin-top: 20px;">H: ° L: °</h1>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <br>
+      
+                  <div class="row current" style="display: flex; justify-content: space-around; ">
+                      <div class="col">
+                          <h1 id="temp" style="font-size: 100px; display: flex; justify-content: end;">0°</p>
+                      </div>
+                      
+                      <div class="col">
+                          <h1 id="cityName" style="display: flex; justify-content: center; margin-top: 15px; font-size: auto;">CityName</h1>
+                          <h1 id="desc" style="font-size: 24px; display: flex; justify-content: center;">Description</h1>
+                      </div>
+                      <div class="col">
+                          <img  id="Icon" src="" alt="weather Icon" width="250px" style="display: flex; justify-content: center;"/>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <br>
+                  </div>
+      
+                  <!-- <button  type="button" onclick="Night()">Night Mode</button>
+                  <button  type="button" onclick="Day()">Day Mode</button> -->
+              </div>
+          </div>
+      
+      
+          <!-- searching -->
+      
+          <div class="col wrapper parent">
+              
+              <input class="child child-1" type="text" placeholder="Enter City" id="userInput">
+              <button class=" child child-2"  id="searchBtn" type="button"><img src="../assets/magnifying-glass-bold.png" alt="magnifying-glass-bold-icon" width="30px"/></button>
+      
+              <div class="line1"></div>
+      
+              <div class="leftSpacing">
+                  <h5 style="margin-top: 228px; font-size: 16px;" id="current">Current City</h5>
+                  <h5  id="currentCity" class="child child-3" style="font-size: 20px"></h5>
+                  <button  id="addBtn" type="button" class="child child-4 d-none"><img src="../assets/plus-circle-bold.png" alt="plus-circle-img" width="30px"></button>
+              </div>      
+      
+              <div class="line2"></div>
+              <h5 style="margin-top: 150px; margin-left: 45px; font-size: 16px;">Favorites</h5>
+      
+              <div id="noFavs">
+                  
+                  <h6 class="center" style="margin-top: 70px;">No favorites to show</h6>
+                  <h6 class="center" style="margin-top: 70px;">Add a city by clicking the plus sign above</h6>
+                  
+              </div>
+              <div class="line3"></div>
+              
+              <div id="favorites">
+                      <!-- placeholder for favorites -->
+              </div>
+
+              <br>
+  
+              <button id="removeBtn" type="button"><img src="../assets/minus-circle-bold.png" alt="minus-circle-icon" width="30px"></button>
+              <p id="cityNameTxt"></p>
+           
+          </div>
+          <!-- end of search -->
       </div>
-
-      <!-- search function start -->
-      
-      <div class="col wrapper parent " style="margin-left: 42px;">
-        <span>
-          <input class="child child-1" type="text" placeholder="Enter City" id="userInput">
-
-          <button class=" child child-2"  id="searchBtn" type="button"><img src="../assets/magnifying-glass-bold.png" alt="magnifying-glass-bold-icon" width="30px"/></button>
-        </span>
-      </div>
-      
     </div>
    
     <script src="./scripts/app.js"></script>

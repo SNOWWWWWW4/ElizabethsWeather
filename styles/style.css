@@ -41,7 +41,7 @@ input{
 }
 
 button{
-    background-color: white;
+    background-color: transparent;
     border-color: transparent; 
 }
 
@@ -59,15 +59,27 @@ button{
     margin-top: 120px;
 }
 
+.child-3{
+    left:64px;
+    margin-top:280px;
+}
+
+.child-4{
+    left: 328px;
+    margin-top: 275px;
+}
+
 .parent {
     position: relative;
 }
 
 .wrapper, html, body {
-    height: 100%;
+    min-height: 100%;
     margin: 0;
+    position: relative;
 }
 .wrapper {
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     background-color: #1D2837
@@ -82,10 +94,6 @@ button{
     margin-left: 70px;
 }
 
-.current{
-    padding:0;
-}
-
 .display{
     background-color: #6E6E6E40;
     filter: drop-shadow(0px 50px 50px #ffc9c9);
@@ -97,6 +105,55 @@ button{
     margin-left:101px;
 }
 
-img{
-    background-color: transparent;
+.center{
+    text-align: center;
+}
+
+.space{
+    margin-top:55px;
+}
+
+.leftSpacing{
+    margin-left: 45px;
+}
+
+.current{
+    margin-top:80px;
+}
+
+.hide{
+    display: none;
+}
+
+.line1 {
+    border-left: 1px solid white;
+    height:338px;
+    position: absolute;
+    margin-left:50%;
+    margin-left: 204px;
+    margin-top:36px;
+    top:0;
+    rotate:90deg;
+}
+
+.line2 {
+    border-left: 1px solid white;
+    height:338px;
+    position: absolute;
+    margin-left:50%;
+    margin-left: 204px;
+    margin-top: 190px;
+    top:0;
+    rotate:90deg;
+}
+
+.line3 {
+    border-left: 1px solid white;
+    height:338px;
+    position: absolute;
+    margin-left:50%;
+    margin-left: 204px;
+    margin-top: 675px;
+    top:0;
+    rotate:90deg;
 }
