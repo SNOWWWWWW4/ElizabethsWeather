@@ -14,39 +14,38 @@
    <div class="col-6">
         <!-- main -->
         <div class="row" style="float: inline-start; padding: 0;">
-        <div class="title">
-            <h1 style="font-size: 60px;"><b>Weather Report</b></h1>
-            <h2 style="font-size: 20px;">November 27, 2023 | 2:20 PM PST</h2>
-        </div>
+            <div class="title">
+                <h1 style="font-size: 42x; font-family: 'Montserrat', sans-serif; font-weight: 800;">Weather Report</h1>
+                <h3 style="font-size: 18px;  font-family: 'Montserrat', sans-serif; font-weight: 500; margin-top: 20px;">November 27, 2023 | 2:20 PM PST</h2>
+            </div>
 
-        <br>
 
-        <div class="displayBG">
+        <div class="display">
             <div class="table">
-                <div class="row">
+                <div class="col ">
                 <div class="cell" id="today">Current</div>
-                <div class="cell"id="Icon1">Weather Icon</div>
-                <div class="cell" id="HL1">H: L: </div>
+                <div class="cell"><img id="Icon1" src="" alt="weather Icon"></div>
+                <div class="cell" id="HL1">H: ° L: °</div>
                 </div>
-                <div class="row">
+                <div class="col">
                 <div class="cell" id="Tmr">Tomorrow</div>
-                <div class="cell" id="Icon2">Weather Icon</div>
-                <div class="cell" id="HL2">H: L: </div>
+                <div class="cell"><img id="Icon2" src="" alt="weather Icon"></div>
+                <div class="cell" id="HL2">H: ° L: °</div>
                 </div>
-                <div class="row">
+                <div class="col">
                 <div class="cell"id="day3">Wednesday</div>
-                <div class="cell"id="Icon2">Weather Icon</div>
-                <div class="cell"id="HL3">Cat</div>
+                <div class="cell"><img id="Icon3" src="" alt="weather Icon"></div>
+                <div class="cell"id="HL3">H: ° L: °</div>
                 </div>
-                <div class="row">
+                <div class="col">
                 <div class="cell"id="day4">Thursday</div>
                 <div class="cell"><img id="Icon4" src="" alt="weather Icon"></div>
-                <div class="cell"id="HL4">H: L: </div>
+                <div class="cell"id="HL4">H: ° L: °</div>
                 </div>
-                <div class="row">
+                <div class="col">
                 <div class="cell"id="day5">Friday</div>
-                <div class="cell"id="Icon5">Weather Icon</div>
-                <div class="cell"id="HL5">H: L: </div>
+                <div class="cell"><img id="Icon5" src="" alt="weather Icon"/></div>
+                <div class="cell"id="HL5">H: ° L: °</div>
                 </div>
             </div>
         </div>
@@ -55,7 +54,7 @@
 
         <div class="row">
             <div class="col">
-                <h1 id="temp" style="font-size: 90px;">0</p>
+                <h1 id="temp" style="font-size: 90px;">0°</p>
             </div>
             
             <div class="col">
@@ -69,25 +68,26 @@
     </div>
 
     <!-- searching -->
-    <div class="col-4 bg  d-flex justify-content-end"  style="float: right;">
+    <div class="col-4 wrapper parent "  style="float: right;">
         <span >
             <div >
-                <input type="text" placeholder="Enter City" id="userInput">
-                <button id="searchBtn" type="button"><img src="./assets/magnifying-glass-bold.png" alt="magnifying-glass-bold-icon" width="18px"/></button>
+                <input class="child child-1" type="text" placeholder="Enter City" id="userInput">
+                <button class=" child child-2"  id="searchBtn" type="button"><img src="./assets/magnifying-glass-bold.png" alt="magnifying-glass-bold-icon" width="30px"/></button>
+
+                
+            <h5 style="margin-top: 175px;" id="current">Current Name</h5>
+            <h5></h5>
+            <hr>
+            <hr>
+
+            <h5 style="margin-top: 100px;"> Favorites</h5>
+           
+            <h5>No favorites to show</h5>
+            <h5>Add a city by clicking the plus sign above</h5>
                 
             </div>
 
-            <hr>
-            <h5 id="current">Current Name</h5>
-            <h5></h5>
-            <hr>
-
-            <h5> Favorites</h5>
-            <li>
-
-            </li>
-            <h5>No favorites to show</h5>
-            <h5>Add a city by clicking the plus sign above</h5>
+            
 
         </span>
 

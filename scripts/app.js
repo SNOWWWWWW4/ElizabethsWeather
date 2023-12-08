@@ -22,6 +22,7 @@ let userInput = document.getElementById("userInput");
 let cityName = document.getElementById("cityName");
 let desc = document.getElementById("desc");
 let temp = document.getElementById("temp");
+let deg;
 
 // 5 Day Forcast
 let today = document.getElementById("today");
@@ -71,7 +72,8 @@ async function ApiCall(){
         console.log(data);
 
         console.log(data.list[0].main.temp);
-        temp.innerText = Math.round(data.list[0].main.temp); 
+        deg = Math.round(data.list[0].main.temp);
+        temp.innerText =  `${deg}°`
 
         //Weather type
         console.log(data.list[0].weather[0].description);
@@ -85,28 +87,28 @@ async function ApiCall(){
         console.log(data.list[0].main.temp_max,data.list[0].main.temp_min);
         High = Math.round(data.list[0].main.temp_max);
         Low = Math.round(data.list[0].main.temp_min);
-        HL1.innerText = `H: ${High} L: ${Low}`;
+        HL1.innerText = `H: ${High}° L: ${Low}°`;
         Icon3.src = `https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`
 
         // High and Low Temperature for tomorrow
         console.log(data.list[1].main.temp_max,data.list[1].main.temp_min);
         High2 = Math.round(data.list[1].main.temp_max)
         Low2 = Math.round(data.list[1].main.temp_min)
-        HL2.innerText = `H: ${High2} L: ${Low2}`;
+        HL2.innerText = `H: ${High2}° L: ${Low2}°`;
         Icon3.src = `https://openweathermap.org/img/wn/${data.list[8].weather[0].icon}@2x.png`
         
         //High and Low Temperature for day 3
         console.log(data.list[16].main.temp_max,data.list[16].main.temp_min);
         High3 = Math.round(data.list[16].main.temp_max)
         Low3 = Math.round(data.list[16].main.temp_min)
-        HL3.innerText = `H: ${High3} L: ${Low3}`;
+        HL3.innerText = `H: ${High3}° L: ${Low3}°`;
         Icon3.src = `https://openweathermap.org/img/wn/${data.list[16].weather[0].icon}@2x.png`
         
         //High and Low Temperature for day 4
         console.log(data.list[24].main.temp_max,data.list[24].main.temp_min);
         High4 = Math.round(data.list[24].main.temp_max)
         Low4 = Math.round(data.list[24].main.temp_min)
-        HL4.innerText = `H: ${High4} L: ${Low4}`;
+        HL4.innerText = `H: ${High4}° L: ${Low4}°`;
         Icon4.src = `https://openweathermap.org/img/wn/${data.list[24].weather[0].icon}@2x.png`
 
 
